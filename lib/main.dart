@@ -20,24 +20,24 @@ class _MyAppState extends State<MyApp> {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter Demo'),
-        ),
-        body: Container(
-          padding: EdgeInsets.all(5),
-          margin: EdgeInsets.all(8),
-          color: Colors.yellow,
-          child: Text(
-            'Hello World',
-            style: TextStyle(
-              fontSize: 24,
-              color: Colors.blue,
-              fontWeight: FontWeight.bold,
-              backgroundColor: Colors.red,
-            ),
+          appBar: AppBar(
+            title: const Text('Flutter Demo'),
           ),
-        ),
-      ),
+          body: Column(
+            children: [
+              Text('Texto 1', style: TextStyle(fontSize: 30)),
+              Text('Texto 2',
+                  style: TextStyle(fontSize: 20, color: Colors.red)),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Icon(Icons.star, color: Colors.red),
+                  Text('Hello World', style: TextStyle(fontSize: 30)),
+                  Icon(Icons.home, color: Colors.blue),
+                ],
+              ),
+            ],
+          )),
     );
   }
 }
