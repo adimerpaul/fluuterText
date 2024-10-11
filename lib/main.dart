@@ -23,7 +23,10 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Flutter Demo'),
         ),
-        body: const Center(
+        body: Container(
+          padding: EdgeInsets.all(5),
+          margin: EdgeInsets.all(8),
+          color: Colors.yellow,
           child: Text(
             'Hello World',
             style: TextStyle(
