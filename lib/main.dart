@@ -24,7 +24,15 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Flutter Demo'),
         ),
         body: const Center(
-          child: Text('Hello World'),
+          child: Text(
+            'Hello World',
+            style: TextStyle(
+              fontSize: 24,
+              color: Colors.blue,
+              fontWeight: FontWeight.bold,
+              backgroundColor: Colors.red,
+            ),
+          ),
         ),
       ),
     );
